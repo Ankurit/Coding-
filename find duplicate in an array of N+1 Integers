@@ -1,0 +1,18 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+int main() {
+    // Write C++ code here
+    int arr[]={1,3,2,4,1};
+    int sum=0,i,total=0;
+    int n = sizeof(arr)/sizeof(arr[0]);
+    for(i=0;i<n;i++)
+    sum+=arr[i];
+    
+    total= (n*(n-1))/2;
+    if(total==sum)
+    std::cout<<"no duplicate";
+    else std::cout<<(sum-total);
+
+    return 0;
+}
